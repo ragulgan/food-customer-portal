@@ -1,0 +1,1836 @@
+/* Reset Screen */
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth !important;
+}
+
+/* Primary color */
+:root {
+  --PRIMARY-COLOR: #FC8019;
+  --PRIMARY-TEXT-COLOR: #FFFFFF;
+  --SECONDARY-TEXT-COLOR: #000000;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--PRIMARY-COLOR);
+  border-radius: 10px;
+}
+
+/* Font family */
+@font-face {
+  font-family: roboto;
+  src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: reem-kulfi;
+  src: url(assets/fonts/ReemKufiInk-Regular.ttf);
+}
+
+@font-face {
+  font-family: inter;
+  src: url(assets/fonts/Inter-Regular.ttf);
+}
+
+.roboto-med {
+  font-family: roboto !important;
+}
+
+.reem-kulfi {
+  font-family: reem-kulfi !important;
+}
+
+.inter-med {
+  font-family: inter !important;
+}
+
+.merchant-list-time,
+.merchant-list-category-subcategory,
+.merchant-list-amount,
+.merchant-list-rating,
+.product-list-time,
+.product-card-list-category-subcategory,
+.product-order-list-description,
+.merchant-list-distance,
+.merchant-list-branch,
+.faraway-sentence,
+.long-dist,
+.search-type,
+.text-map-address {
+  font-size: 12px !important;
+}
+
+.footer-para,
+.product-list-rating-star,
+.product-list-rating-count .promo-head,
+.promo-description,
+.delivery-link,
+.category-name,
+.order-track-delivery,
+.cancel-reason,
+.card-add-button,
+.driver-notification,
+.promo-card-code,
+.map-button,
+.indexFont {
+  font-size: 14px !important;
+}
+
+.product-list-category-subCategory,
+.order-track-item,
+.product-card-price {
+  font-size: 15px !important;
+}
+
+.login-button,
+.merchant-list-name,
+.footer-links,
+.copyright,
+.login-para,
+.account-create,
+.product-list-work-time,
+.product-list-name,
+.bill-delivery,
+.delivery-address,
+.list-tab-button-my-order,
+.merchant-carousel-name,
+.list-tab .Mui-selected,
+.footer-links,
+.copyright,
+.order-track-delivery-amount,
+.order-track-status,
+.order-track-merchant-address,
+.order-track-distance,
+.order-cancel-review,
+.product-order-list-head,
+.cancel-submit-button,
+.search-name,
+.bill-Offer,
+.addressChange,
+.otp-field>div>input::placeholder {
+  font-size: 16px !important;
+}
+
+.profile-button,
+.para-info,
+.order-profile-details,
+.address-add-head,
+.order-customer-input>label,
+.add-address-input>label,
+.add-address-input-ar>label,
+.card-amount,
+.category-carousel-name,
+.order-track-invoice,
+.order-track-merchant,
+.coupon-button,
+.coupon-ar-button,
+.payment-proceed-button,
+.product-order-list-price,
+.vegOnly,
+.list-tab-button,
+.list-tab-button.Mui-selected {
+  font-size: 18px !important;
+}
+
+.card-product-name,
+.promo-card-header,
+.bill-head,
+.address-head,
+.payment,
+.order-profile-head,
+.order-track-item-amount,
+.cancel-header,
+.drawer-head,
+.drawer-sub-head,
+.cart-symbol-button,
+.order-track-item-offer-amount,
+.product-list-head {
+  font-size: 20px !important;
+}
+
+.login-header {
+  font-size: 24px !important;
+}
+
+.merchant-head,
+.merchant-list-head {
+  font-size: 32px !important;
+}
+
+.address {
+  font-weight: 300 !important;
+}
+
+.promo-card-code,
+.login-para,
+.para-info,
+.order-profile-details,
+.footer-para,
+.product-list-rating-star,
+.product-list-rating-count .promo-head,
+.promo-description,
+.merchant-list-category-subcategory,
+.merchant-list-amount,
+.merchant-list-rating,
+.product-list-time,
+.product-card-list-category-subcategory,
+.product-list-category-subCategory,
+.login-button,
+.category-name,
+.footer-links,
+.copyright,
+.profile-button,
+.product-list-category-subCategory,
+.order-track-delivery,
+.order-track-status,
+.order-track-merchant-address,
+.order-cancel-review,
+.cancel-header,
+.product-order-list-description,
+.cancel-reason,
+.drawer-sub-head {
+  font-weight: 400 !important;
+}
+
+.merchant-head,
+.card-product-name,
+.merchant-carousel-name,
+.promo-card-header,
+.order-profile-head,
+.merchant-list-name,
+.footer-links,
+.copyright,
+.account-create,
+.product-list-work-time,
+.product-list-name,
+.bill-delivery,
+.delivery-address,
+.list-tab-button-my-order,
+.myorder-tab-button .Mui-selected,
+.head-info-2,
+.card-amount,
+.category-carousel-name,
+.list-tab .Mui-selected,
+.order-track-item,
+.order-track-delivery-amount,
+.order-track-merchant,
+.product-order-list-head,
+.cancel-submit-button,
+.vegOnly,
+.search-name,
+.search-type,
+.bill-Offer,
+.driver-notification,
+.promo-text,
+.merchant-list-branch,
+.promo-remove {
+  font-weight: 500 !important;
+}
+
+.bill-head,
+.address-head,
+.payment,
+.product-card-price,
+.address-add-head,
+.merchant-list-head,
+.product-list-head,
+.order-track-invoice,
+.order-track-item-amount,
+.order-track-distance,
+.merchant-list-time,
+.merchant-list-distance,
+.faraway-sentence,
+.long-dist,
+.product-list-distance,
+.product-order-list-price {
+  font-weight: 600 !important;
+}
+
+.head-info,
+.login-header {
+  font-weight: 700 !important;
+}
+
+.profile-button,
+.profile-edit-button,
+.list-tab-button,
+.login-button,
+.cart-button,
+.card-add-button,
+.coupon-button,
+.coupon-ar-button,
+.verify-button,
+.order-details-button,
+.order-track-delivery,
+.payment-proceed-button,
+.change-profile,
+.order-cancel-review,
+.cancel-submit-button,
+.cancel-reason,
+.promo-button,
+.filter-select-button,
+.add-address-cart-button,
+.addressChange,
+.add-more-button,
+.filter-select-submit,
+.map-button,
+.account-create,
+.promo-remove {
+  text-transform: none !important;
+}
+
+/* Colors */
+.bg-head {
+  background-color: #FFF8F4 !important
+}
+
+.slick-prev:before,
+.slick-next:before,
+.promo-head,
+.merchant-carousel-name,
+.address-add-head,
+.card-cart-button,
+.carousel-button,
+.filter-button,
+.merchant-head,
+.merchant-list-time,
+.product-list-time,
+.login-header,
+.profile-edit-button,
+.bill-price,
+.account-create,
+.order-track-item-offer-amount,
+.login-input>span:focus,
+.add-more-button,
+.promo-remove,
+.product-list-rating-star {
+  color: var(--PRIMARY-COLOR) !important;
+}
+
+.merchant-list-amount,
+.merchant-list-distance,
+.merchant-list-branch,
+.product-list-distance,
+.profile-button,
+.head-info,
+.head-info-2,
+.merchant-list-name,
+.product-list-name,
+.bill-delivery,
+.delivery-address,
+.list-tab-button-my-order,
+.product-card-price,
+.myorder-tab-button .Mui-selected,
+.order-track-invoice,
+.order-track-item,
+.order-track-delivery-amount,
+.order-track-distance,
+.product-order-list-head,
+.product-order-list-price {
+  color: var(--SECONDARY-TEXT-COLOR) !important;
+}
+
+.copyright,
+.list-tab .Mui-selected,
+.merchant-list-rating,
+.footer-links,
+.login-button,
+.cart-button,
+.card-add-button,
+.coupon-button,
+.coupon-ar-button,
+.verify-button,
+.order-details-button,
+.cart-symbol-button,
+.footer-para,
+.copyright,
+.promo-button:hover,
+.promo-button,
+.payment-proceed-button,
+.change-profile,
+.filter-select .Mui-selected {
+  color: var(--PRIMARY-TEXT-COLOR) !important;
+}
+
+.merchant-list-head,
+.cancel-header,
+.search-name,
+.driver-notification {
+  color: #312B28 !important;
+}
+
+.merchant-list-category-subcategory,
+.product-card-list-category-subcategory,
+.product-list-work-time,
+.para-info,
+.order-profile-details,
+.login-para,
+.order-customer-input>label,
+.add-address-input>label,
+.add-address-input-ar>label,
+.product-order-list-description,
+.cancel-reason,
+.address-type>label:focus,
+.address-type>label,
+.promo-text,
+.product-list-rating-count,
+.promo-card-code {
+  color: #999999 !important;
+}
+
+.card-product-name,
+.product-list-head,
+.promo-card-header,
+.bill-head,
+.address-head,
+.payment,
+.order-profile-head,
+.product-list-category-subCategory,
+.card-amount,
+.category-carousel-name,
+.product-list-category-subCategory,
+.order-track-merchant,
+.add-address-cart-button,
+.bill-Offer,
+.login-input>div>input {
+  color: #333333 !important;
+}
+
+.promo-description,
+.category-name,
+.order-track-merchant-address,
+.search-type,
+.login-input>label {
+  color: #666666 !important;
+}
+
+.delivery-link,
+.order-track-delivery {
+  color: #5484D2 !important;
+}
+
+.order-cancel-review {
+  color: #04BA01 !important;
+  text-decoration: underline !important;
+}
+
+.badge-color>span {
+  background-color: #000000 !important;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+/* Other styling */
+.profile-dropdown>.MuiMenu-paper {
+  border-radius: 16px !important;
+}
+
+.delete-icon {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.headerLogo, .add-search-input-map {
+  width: 80% !important;
+}
+
+.footer-card {
+  padding: 6px 8px !important;
+}
+
+.login-button,
+.cart-button,
+.card-add-button,
+.coupon-button,
+.coupon-ar-button,
+.verify-button,
+.order-details-button,
+.promo-button,
+.payment-proceed-button,
+.cancel-submit-button {
+  border-radius: 21px !important;
+  background: var(--PRIMARY-COLOR) !important;
+  box-shadow: none !important;
+  min-width: 0 !important;
+  padding: 11px !important;
+}
+
+.login-button {
+  border-radius: 16px !important;
+}
+
+.verify-button {
+  min-width: 100px !important;
+}
+
+.order-details-button {
+  border-radius: 10px !important;
+  padding: 10px !important;
+}
+
+.info-card-img {
+  margin-left: 6px !important;
+  width: 175px !important;
+  height: 175px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+}
+
+.merchant-carousel-name,
+.product-card-list-category-subcategory,
+.product-list-name,
+.category-name,
+.card-product-name,
+.product-list-head,
+.product-list-category-subCategory,
+.product-list-time,
+.promo-card-code,
+.order-track-merchant-address,
+.merchant-list-category-subcategory {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+}
+
+.category-name,
+.promo-card-code,
+.product-list-category-subCategory,
+.product-list-time,
+.product-list-name,
+.order-track-merchant-address
+.merchant-list-category-subcategory {
+  -webkit-line-clamp: 1 !important;
+}
+
+.change-profile {
+  color: var(--PRIMARY-COLOR) !important;
+  padding-bottom: 0px !important;
+  text-decoration: underline !important;
+}
+
+.promo-button,
+.textfield-variant>div>input {
+  border-radius: 8px !important;
+}
+
+.head-info,
+.head-info-2 {
+  font-size: 62px !important;
+  line-height: 115% !important;
+  animation: drop 0.75s linear forwards;
+}
+
+.info-card {
+  background: linear-gradient(320.89deg, var(--PRIMARY-TEXT-COLOR) 25.52%, rgba(255, 255, 255, 0.167674) 35.49%, rgba(255, 255, 255, 0) 80.98%) !important;
+  filter: drop-shadow(0px 14px 18px rgba(0, 0, 0, 0.06)) !important;
+  border-radius: 105.5px 27px 27px 27px !important;
+  padding: 8px !important;
+  height: 211px !important;
+  position: relative !important;
+  top: -95px !important;
+  box-shadow: 0px 14px 18px 0px #0000000F !important;
+}
+
+.info-card-height {
+  background: linear-gradient(320.89deg, var(--PRIMARY-TEXT-COLOR) 25.52%, rgba(255, 255, 255, 0.167674) 35.49%, rgba(255, 255, 255, 0) 80.98%) !important;
+  filter: drop-shadow(0px 14px 18px rgba(0, 0, 0, 0.06)) !important;
+  border-radius: 105.5px 27px 27px 27px !important;
+  padding: 8px !important;
+  height: 211px !important;
+  position: relative !important;
+  top: -105px !important;
+  box-shadow: 0px 14px 18px 0px #0000000F !important;
+}
+
+.card-cart-button,
+.carousel-button,
+.filter-button {
+  border: 1px solid #F1F1F1 !important;
+  border-radius: 10px !important;
+  min-width: 5% !important;
+  box-shadow: none !important;
+  padding: 6px !important;
+}
+
+.swal2-cancel {
+  background-color: var(--PRIMARY-TEXT-COLOR) !important;
+  border: 1px solid var(--PRIMARY-COLOR) !important;
+  color: var(--PRIMARY-COLOR) !important;
+}
+
+.card-cart-button {
+  border: 1px solid var(--PRIMARY-COLOR) !important;
+}
+
+.padding-info-card {
+  padding-top: 50px !important;
+}
+
+.padding-head-info {
+  padding-top: 85px !important;
+}
+
+.card-details:last-child,
+.card-content:last-child {
+  padding-bottom: 8px !important;
+}
+
+.category-img-box {
+  border: 1px solid var(--PRIMARY-COLOR) !important;
+  background: var(--PRIMARY-TEXT-COLOR) !important;
+  border-radius: 50% !important;
+  height: 154px !important;
+}
+
+.category-img-box-hover:hover {
+  border-radius: 50% !important;
+}
+
+.product-merchant-container {
+  position: relative !important;
+  top: -103px !important;
+}
+
+.merchant-img-box {
+  background: var(--PRIMARY-TEXT-COLOR) !important;
+  border: 1px solid var(--PRIMARY-COLOR) !important;
+  border-radius: 35px !important;
+  height: 157px !important;
+}
+
+.merchant-img-skeleton {
+  height: 110px !important;
+}
+
+.merchant-img-box-hover:hover {
+  border-radius: 35px !important;
+}
+
+.list-tab .Mui-selected {
+  background: #FC8019 !important;
+  border-radius: 10px !important;
+}
+
+.filter-select .Mui-selected {
+  background: var(--PRIMARY-COLOR) !important;
+}
+
+.list-tab>div>span,
+.filter-select>div>span {
+  display: none !important;
+}
+
+.product-list-card {
+  min-height: 330px !important;
+}
+
+.merchant-list-card,
+.product-list-card,
+.merchant-list-skeleton {
+  border: 1px solid #EAEAEA !important;
+  border-radius: 18px !important;
+  box-shadow: none !important;
+  padding: 5px !important;
+  transition: 0.35s transform ease-in-out !important;
+}
+
+.merchant-list-card:hover,
+.product-list-card:hover {
+  transform: scale(1.05) !important;
+  cursor: pointer !important;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2) !important;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) !important;
+}
+
+.merchant-list-rating {
+  background: var(--PRIMARY-COLOR) !important;
+  border-radius: 4px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.bg-foot {
+  background: #313131 !important;
+  width: 100%;
+  position: relative !important;
+}
+
+.footer-links {
+  text-decoration: none !important;
+  display: block !important;
+  padding: 8px 0 8px 0 !important;
+}
+
+.footer-bg-img1 {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+}
+
+.footer-bg-img2 {
+  position: absolute !important;
+  right: 0 !important;
+  bottom: 0 !important;
+}
+
+.otp-field>div {
+  justify-content: space-between !important;
+}
+
+.otp-field>div>input {
+  width: 4em !important;
+  height: 4em !important;
+  border: 1px solid #DCDCDC !important;
+  border-radius: 16px !important;
+}
+
+.otp-field>div>input:focus {
+  border-color: var(--PRIMARY-COLOR) !important;
+  outline: var(--PRIMARY-COLOR) !important
+}
+
+.product-list-rating {
+  background-color: var(--PRIMARY-TEXT-COLOR) !important;
+  border-radius: 12px !important;
+  padding: 8px !important;
+  border: 1px solid var(--PRIMARY-COLOR) !important;
+}
+
+.card-add-button {
+  border-radius: 8px !important;
+  padding: 4px 24px !important;
+  box-shadow: none !important;
+}
+
+.promo-card {
+  background: var(--PRIMARY-TEXT-COLOR) !important;
+  border: 1px solid #E7E7E7 !important;
+  border-radius: 20px !important;
+  padding: 16px !important;
+  box-shadow: none !important;
+}
+
+.search-input {
+  background: rgba(255, 255, 255, 0.22) !important;
+  border: 1px solid #E0E0E0 !important;
+  border-radius: 16px !important;
+  padding: 5px 0 !important;
+  width: 85% !important;
+  display: flex !important;
+  place-items: center !important;
+}
+
+.autocomplete-city>div>input.Mui-disabled {
+  -webkit-text-fill-color: #000000 !important;
+  opacity: 0.9 !important;
+  font-size: 14px !important;
+  font-family: roboto !important;
+}
+
+.autocomplete-city>div>input {
+  padding: 0 6px 0 0 !important;
+}
+
+.autocomplete-variant>div>div, .autocomplete-ar-variant>div>div {
+  padding: 0 !important;
+}
+
+.autocomplete-ar-variant .css-epgtrs-MuiAutocomplete-root .MuiOutlinedInput-root .MuiAutocomplete-endAdornment {
+  left: 9px !important;
+  right: unset !important;
+}
+
+.autocomplete-ar-variant .css-1q60rmi-MuiAutocomplete-endAdornment {
+  position: absolute !important;
+  left: 0 !important;
+  right: unset !important;
+}
+
+.autocomplete-city>div>fieldset,
+.border-coupon>div>div>fieldset {
+  border: none !important;
+  border-right: 1px solid #D9D9D9 !important;
+  border-radius: 0 !important;
+}
+
+.autocomplete-variant>div>div>fieldset, .autocomplete-ar-variant>div>div>fieldset {
+  border-color: #EBEBEB !important;
+  border-radius: 8px !important;
+}
+
+.autocomplete-variant>div>div>input, .autocomplete-ar-variant>div>div>input {
+  background-color: #EBEBEB !important;
+}
+
+.border-search>div>fieldset,
+.border-coupon>div>fieldset {
+  border: none !important;
+}
+
+.loader {
+  display: flex !important;
+  width: 100% !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100%;
+  margin: 16px 0 !important;
+}
+
+.cart-list,
+.coupon-list,
+.bill-details,
+.address-list,
+.address-list-display,
+.payment-list,
+.order-box,
+.promocode-list,
+.coupon-applied-list {
+  border-radius: 18px !important;
+  border: 1px solid #EAEAEA;
+  background: var(--PRIMARY-TEXT-COLOR) !important;
+  box-shadow: none !important;
+}
+
+.coupon-applied-list {
+  border: 1px dashed var(--PRIMARY-COLOR);
+  background: #FFECDC !important;
+}
+
+.cart-number-list {
+  width: 56px !important;
+  height: 23px !important;
+  border-color: var(--PRIMARY-COLOR) !important;
+  background: rgba(251, 100, 10, 0.1) !important;
+}
+
+.coupon-button, .coupon-ar-button {
+  width: 155px !important;
+  height: 55px !important;
+  border-radius: 0 8px 8px 0 !important;
+}
+
+.coupon-ar-button {
+  border-radius: 8px 0 0 8px !important;
+}
+
+.border-coupon>div>input {
+  padding: 0 8px !important;
+}
+
+.cart-list-button {
+  display: flex !important;
+  background: var(--PRIMARY-COLOR) !important;
+  width: 72px !important;
+  height: 33px !important;
+  border-radius: 8px !important;
+  align-items: center !important;
+  justify-content: space-around !important;
+}
+
+.cart-symbol-button {
+  width: 12px !important;
+  height: 12px !important;
+  min-width: 0 !important;
+}
+
+.map-button {
+  min-width: 0 !important;
+}
+
+.add-map-button > span {
+  margin: 0px !important;
+}
+
+.view-cart-box {
+  border-radius: 16px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 8px !important;
+  background: var(--PRIMARY-COLOR) !important;
+}
+
+.order-customer-input>span:focus,
+.add-address-input>span:focus,
+.order-customer-input>label,
+.add-address-input>label,
+.address-type>label:focus,
+.address-type>label {
+  font-family: reem-kulfi !important;
+  outline: var(--PRIMARY-COLOR) !important
+}
+
+.add-address-input-ar>label,
+.add-address-input-ar>span:focus {
+  outline: var(--PRIMARY-COLOR) !important
+}
+
+
+.add-address-input>div>fieldset,
+.add-address-input-ar>div>fieldset,
+.add-address-autocomplete>div>div>fieldset,
+.add-address-autocomplete-ar>div>div>fieldset,
+.login-input>div>fieldset {
+  border: 1px solid #999 !important;
+}
+
+.order-customer-input>div::after,
+.order-customer-input>div::before {
+  border-bottom: 1px solid #999 !important;
+}
+
+.order-customer-input>div>input,
+.add-address-input>div>input,
+.add-address-autocomplete>div>div>input {
+  color: #333333 !important;
+  font-family: reem-kulfi !important;
+}
+
+.add-address-autocomplete-ar>div>div>input {
+  color: #333333 !important;
+}
+
+.add-address-input-ar>div>input {
+  color: #333333 !important;
+}
+
+.myorder-tab {
+  border: 1px solid #EAEAEA;
+  border-bottom: none !important;
+  background: #F5F5F5;
+}
+
+.list-tab-button-my-order {
+  text-transform: capitalize !important;
+  width: 20% !important;
+  font-family: roboto;
+  color: #333 !important;
+}
+
+.myorder-tab-button .Mui-selected {
+  border-radius: 6px 6px 0px 0px;
+  background: #FFF;
+  white-space: nowrap;
+}
+
+.myorder-tab-button>div>span {
+  display: none !important;
+}
+
+.profile-edit-button,
+.add-more-button {
+  padding: 0px !important;
+  text-decoration: underline !important;
+}
+
+.payment-proceed-button,
+.add-more-button {
+  padding: 10px !important;
+}
+
+.promocode-list {
+  border: 1px dashed var(--PRIMARY-COLOR) !important;
+  border-radius: 8px !important;
+}
+
+.new-address:hover {
+  border-radius: 18px !important;
+  cursor: pointer !important;
+}
+
+.address-list-display:hover {
+  background: #F6F6F5 !important;
+}
+
+.address-type>div {
+  border-radius: 8px !important;
+}
+
+.order-placed {
+  border-radius: 10px;
+  border: 1px solid #02962B;
+  background: rgba(4, 186, 1, 0.20);
+}
+
+.order-active {
+  border-radius: 10px;
+  border: 1px solid #FDA11C;
+  background: rgba(253, 161, 28, 0.20);
+}
+
+.order-delivered {
+  border-radius: 10px;
+  border: 1px solid #5F66C6;
+  background: rgba(95, 102, 198, 0.20);
+}
+
+.order-others {
+  border-radius: 10px;
+  border: 1px solid #F00;
+  background: rgba(251, 53, 10, 0.20);
+}
+
+.order-product-list {
+  border-radius: 18px !important;
+  border: 1px solid #EAEAEA !important;
+  width: 70% !important;
+}
+
+.search-popover {
+  position: absolute !important;
+  top: 80px !important;
+  left: 39%;
+  border-radius: 18px !important;
+  width: 35% !important;
+  height: 520% !important;
+  z-index: 999 !important;
+  background-color: #FFFFFF !important;
+  overflow: scroll !important;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
+}
+
+.cancel-reason {
+  border: 1px dashed #999999 !important;
+  border-radius: 11px !important;
+  padding: 0 24px;
+}
+
+.login-width {
+  width: 25% !important;
+}
+
+.toggle-width {
+  width: 500px !important;
+}
+
+.filter-select-button,
+.filter-select-submit {
+  border-radius: 39.316px !important;
+  background: #FB640A33 !important;
+  box-shadow: none !important;
+  color: var(--PRIMARY-COLOR) !important;
+}
+
+.filter-select-submit {
+  background: var(--PRIMARY-COLOR) !important;
+  color: var(--PRIMARY-TEXT-COLOR) !important;
+}
+
+.order-merchant-img {
+  border-radius: 18px !important;
+  object-fit: cover !important;
+  width: 115px !important;
+  height: 101px !important;
+  aspect-ratio: 120;
+}
+
+.driver-img {
+  height: 48px !important;
+  width: 48px !important;
+  border-radius: 50% !important;
+}
+
+.delivery-address-head {
+  width: 65% !important;
+  text-align: end !important;
+}
+
+.account-create {
+  text-align: center !important;
+}
+
+.offersEmpty {
+  width: 275px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.promocode-cart {
+  width: 50px;
+  height: 50px;
+}
+
+.swal2-popup {
+  padding: 40px 0 40px 0 !important;
+}
+
+.log-out-img{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #999999;
+}
+
+.warning-model-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.br-display {
+  display: none !important;
+}
+
+.veg-switch > span > span:first-of-type {
+  background-color: none !important;
+  background-image: url('./assets/images/veg.svg');
+  background-position: center;
+
+}
+
+.nonveg-switch > span > span:first-of-type {
+  background-color: none !important;
+  background-image: url('./assets/images/non-veg.svg');
+  background-position: center;
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+}
+
+.map-container {
+  height: 100%;
+  width: 100%;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.map-container-order {
+  height: 100%;
+  width: 100%;
+}
+
+.map-container-ar {
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.faraway-sentence {
+  background-color: rgba(252, 128, 25, 0.22);
+  width: fit-content;
+  border-radius: 4px;
+}
+
+.long-dist {
+  margin-left: 4px;
+}
+
+.pac-container {
+  z-index: 9999999999 !important;
+}
+
+.search-input-map {
+  width: 500px !important;
+}
+
+.radio-cash {
+  width: 100% !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}
+
+.radio-cash > label {
+  width: 50% !important;
+  display: flex !important;
+  justify-content: start !important;
+  margin-left: 0px !important;
+}
+
+.radio-cash > label:last-child {
+  justify-content: end !important;
+}
+
+@media (max-width:1350px) {
+  .otp-field>div>input {
+    width: 3.5em !important;
+    height: 3.5em !important;
+  }
+
+  .login-width {
+    width: 33% !important;
+  }
+}
+
+@media (max-width:1200px) {
+  .br-display {
+    display: unset !important;
+  }
+
+  .headerLogo {
+    width: 90% !important;
+  }
+
+  .profile-button,
+  .para-info,
+  .order-profile-details,
+  .product-card-price,
+  .address-add-head,
+  .order-customer-input>label,
+  .add-address-input>label,
+  .add-address-input-ar>label,
+  .card-amount,
+  .category-carousel-name,
+  .order-track-invoice,
+  .coupon-button,
+  .coupon-ar-button,
+  .payment-proceed-button,
+  .product-order-list-price,
+  .vegOnly,
+  .promo-card-header,
+  .login-input>label {
+    font-size: 17px !important;
+  }
+
+  .product-merchant-container {
+    top: -93px !important;
+  }
+
+  .info-card-img {
+    width: 152px !important;
+    height: 152px !important;
+  }
+
+  .category-img-box {
+    height: 134px !important;
+  }
+
+  .merchant-img-box {
+    height: 140px !important;
+  }
+
+  .merchant-img-skeleton {
+    height: 90px !important;
+  }
+
+  .login-width {
+    width: 33% !important;
+  }
+
+  .toggle-width {
+    width: 450px !important;
+  }
+
+  .search-popover {
+    height: 450% !important;
+  }
+}
+
+@media (max-width:1050px) {
+  .login-width {
+    width: 43% !important;
+  }
+}
+
+@media (max-width:900px) {
+  .close-address-button {
+    top: 10px !important;
+    right: 10px !important;
+  }
+
+  .search-input {
+    padding: 0px !important;
+  }
+
+  .loader {
+    padding-bottom: 0 !important;
+  }
+
+  .responsive-margin {
+    margin-top: 6px !important;
+  }
+
+  .info-card-img {
+    width: 102px !important;
+    height: 102px !important;
+  }
+
+  .card-details,
+  .footer-card {
+    padding: 0px 0px !important;
+  }
+
+  .search-input {
+    width: 100% !important;
+  }
+
+  .media-height {
+    height: 36vh !important;
+  }
+
+  .padding-head-info {
+    padding-top: 24px !important;
+  }
+
+  .login-width {
+    width: 40% !important;
+  }
+
+  .category-img-box {
+    height: 104px !important;
+  }
+
+  .merchant-img-box {
+    height: 100px !important;
+  }
+
+  .merchant-img-skeleton {
+    height: 90px !important;
+  }
+
+  .head-info,
+  .head-info-2 {
+    font-size: 42px !important;
+  }
+
+  .footer-para,
+  .product-list-rating-star,
+  .product-list-rating-count,
+  .promo-head,
+  .promo-description,
+  .delivery-link,
+  .category-name,
+  .order-track-delivery,
+  .cancel-reason,
+  .order-details-button {
+    font-size: 10px !important;
+  }
+
+  .product-list-category-subCategory,
+  .order-track-item {
+    font-size: 11px !important;
+  }
+
+  .login-button,
+  .merchant-list-name,
+  .footer-links,
+  .copyright,
+  .login-para,
+  .account-create,
+  .product-list-work-time,
+  .product-list-name,
+  .promo-card-code,
+  .bill-delivery,
+  .delivery-address,
+  .list-tab-button-my-order,
+  .merchant-carousel-name,
+  .footer-links,
+  .copyright,
+  .order-track-delivery-amount,
+  .order-track-status,
+  .order-track-merchant-address,
+  .order-cancel-review,
+  .product-order-list-head,
+  .cancel-submit-button,
+  .search-name .profile-button,
+  .para-info,
+  .order-profile-details,
+  .product-card-price,
+  .order-customer-input>label,
+  .add-address-input>label,
+  .add-address-input-ar>label,
+  .address-type>label,
+  .card-amount,
+  .category-carousel-name,
+  .order-track-invoice,
+  .coupon-button,
+  .coupon-ar-button,
+  .payment-proceed-button,
+  .product-order-list-price,
+  .vegOnly,
+  .order-status-size,
+  .login-input>label {
+    font-size: 12px !important;
+  }
+
+  .card-product-name,
+  .promo-card-header,
+  .bill-head,
+  .address-head,
+  .payment,
+  .order-profile-head,
+  .order-track-item-amount,
+  .order-track-merchant,
+  .cancel-header,
+  .order-track-item-offer-amount,
+  .list-tab-button,
+  .list-tab .Mui-selected,
+  .address,
+  .search-name,
+  .order-track-distance,
+  .drawer-sub-head,
+  .filter-select-button,
+  .filter-select-submit,
+  .slider-checkBox span,
+  .promo-text,
+  .address-add-head,
+  .promo-remove {
+    font-size: 14px !important;
+  }
+
+  .login-header,
+  .product-list-head {
+    font-size: 16px !important;
+  }
+
+  .merchant-head,
+  .merchant-list-head {
+    font-size: 24px !important;
+  }
+
+  .info-card {
+    top: -135px !important;
+  }
+
+  .product-merchant-container {
+    top: -30px !important;
+  }
+
+  .toggle-width {
+    width: 400px !important;
+  }
+
+  .delivery-address-head {
+    width: 58% !important;
+  }
+
+  .order-track-merchant-address {
+    -webkit-line-clamp: 2 !important;
+  }
+
+  .info-card-height {
+    top: -145px !important;
+  }
+
+  .media-height {
+    height: 35vh !important;
+  }
+
+  .footer-links {
+    padding: 0px 0 16px 0 !important;
+  }
+
+  .promocode-cart {
+    width: 40px;
+    height: 40px;
+  }
+
+  .search-popover {
+    height: 420% !important;
+  }
+}
+
+@media (max-width:740px) {
+
+  .google-img,
+  .appStore-img {
+    width: 100px;
+    height: 40px;
+  }
+
+  .headerLogo {
+    width: 80% !important;
+  }
+}
+
+@media (max-width:700px) {
+  .search-input-map {
+    width: 400px !important;
+  } 
+
+  .toggle-width {
+    width: 350px !important;
+  }
+
+  .border-search ::placeholder,
+  .autocomplete-city>div>div>input::placeholder,
+  .indexFont,
+  .order-status-size,
+  .order-details-button,
+  .address,
+  .search-name,
+  .drawer-sub-head,
+  .product-list-head,
+  .slider-checkBox span,
+  .add-address-autocomplete>div>div>input::placeholder,
+  .add-address-autocomplete-ar>div>div>input::placeholder{
+    font-size: 12px !important;
+  }
+
+  .info-card {
+    top: -133px !important;
+  }
+
+  .order-others,
+  .order-delivered,
+  .order-active {
+    padding: 4px !important;
+  }
+
+  .order-merchant-img {
+    width: 90px !important;
+    height: 76px !important;
+  }
+
+  .order-track-img {
+    height: 115px !important;
+    padding: 14px 0 !important;
+  }
+
+  .otp-field>div>input {
+    width: 3em !important;
+    height: 3em !important;
+  }
+
+  .delete-icon {
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  .product-list-head {
+    padding-top: 8px;
+  }
+
+  .promocode-cart {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width:600px) {
+  .add-address-input>div>input{
+    padding: 11.5px 14px !important;
+  }
+
+  .address-type>div>input {
+    padding: 2.5px 4px 2.5px 5px !important;
+  }
+
+  .slick-next:before {
+    display: none !important;
+  }
+
+  .slick-prev:before {
+    display: none !important;
+
+  }
+
+  .media-height {
+    height: 70vh !important;
+  }
+
+  .padding-info-card {
+    padding: 80px 20px 0px 40px !important;
+  }
+
+  .padding-info-card-2 {
+    padding: 20px 40px 0px 20px !important;
+  }
+
+  .info-card-img {
+    width: 142px !important;
+    height: 142px !important;
+  }
+
+  .category-img-box {
+    height: 149px !important;
+  }
+
+  .toggle-width {
+    width: 300px !important;
+  }
+
+  .product-merchant-container {
+    top: -40px !important;
+  }
+
+  .delete-icon {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .order-track-merchant-address {
+    -webkit-line-clamp: 1 !important;
+  }
+
+  .responsive-margin {
+    margin-top: 14px !important;
+  }
+
+  .footer-bg-img1,
+  .footer-bg-img2 {
+    display: none !important;
+  }
+
+  .bg-foot {
+    top: 250px !important;
+  }
+
+  .login-width {
+    width: 60% !important;
+  }
+
+  .google-img,
+  .appStore-img {
+    width: 164px;
+    height: 49px;
+  }
+
+  .headerLogo {
+    width: 75% !important;
+  }
+
+  .search-popover {
+    top: 136px !important;
+    right: 22%;
+    width: 50% !important;
+  }
+
+  .search-popover {
+    height: 450% !important;
+  }
+
+  .myorder-tab-button>div>div>button {
+    white-space: nowrap !important;
+  }
+
+  .merchant-list-card,
+  .product-list-card,
+  .merchant-list-skeleton {
+    margin: 0 !important;
+  }
+
+  .add-address-input,
+  .add-address-input-ar {
+    margin-top: 6px !important;
+  }
+}
+
+@media (max-width:500px) {
+  .search-input-map {
+    width: 400px !important;
+  }
+
+  .padding-info-card {
+    padding: 80px 0px 0px 0px !important;
+  }
+
+  .padding-info-card-2 {
+    padding: 20px 0px 0px 0px !important;
+  }
+
+  .login-width {
+    width: 60% !important;
+  }
+
+  .search-popover {
+    top: 126px !important;
+    height: 350% !important;
+  }
+
+  .autocomplete-city>div>input.Mui-disabled {
+    font-size: 11px !important;
+  }
+}
+
+@media (max-width:478px) {
+  .br-display {
+    display: none !important;
+  }
+  .search-input-map {
+    width: 300px !important;
+  }
+}
+
+@media (max-width:385px) {
+  .search-popover {
+    top: 135px !important;
+    left: 25%;
+    width: 70% !important;
+  }
+
+  .order-details-button,
+  .map-button,
+  .text-map-address {
+    font-size: 10px !important;
+  }
+
+  .info-card-img {
+    width: 112px !important;
+    height: 112px !important;
+  }
+
+  .login-width {
+    width: 80% !important;
+  }
+
+  .product-merchant-container {
+    top: 45px !important;
+  }
+
+  .category-img-box {
+    height: 130px !important;
+  }
+
+  .add-address {
+    width: 40% !important;
+  }
+
+  .close-address-button {
+    top: 10px !important;
+    right: 0 !important;
+  }
+}
+
+/*info card Animations */
+#info-card {
+  position: relative;
+  animation: run 0.75s linear;
+}
+
+#info-content {
+  position: relative;
+  animation: moving 0.25s linear;
+}
+
+@keyframes run {
+  0% {
+    left: 100%;
+    transform: rotate(180deg);
+  }
+
+  50% {
+    left: 50%;
+  }
+
+  100% {
+    left: 0%;
+    transform: unset;
+  }
+}
+
+@keyframes moving {
+  0% {
+    left: 100%;
+  }
+
+  50% {
+    left: 50%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+#info-card-ar {
+  position: relative;
+  animation: run-ar 0.75s linear;
+}
+
+#info-content-ar {
+  position: relative;
+  animation: moving-ar 0.25s linear;
+}
+
+@keyframes run-ar {
+  0% {
+    right: 100%;
+    transform: rotate(-180deg);
+  }
+
+  50% {
+    right: 50%;
+  }
+
+  100% {
+    right: 0%;
+    transform: unset;
+  }
+}
+
+@keyframes moving-ar {
+  0% {
+    right: 100%;
+  }
+
+  50% {
+    right: 50%;
+  }
+
+  100% {
+    right: 0%;
+  }
+}
+
+/*info head Animations */
+#text-drop {
+  position: relative;
+}
+
+.para-info {
+  animation: drop 0.75s linear forwards;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateX(-200px) scaleX(0.9);
+    opacity: 0;
+  }
+
+  5% {
+    opacity: .7;
+  }
+
+  50% {
+    transform: translateX(0px) scaleX(1);
+    opacity: 10;
+  }
+
+  100% {
+    transform: translateX(0px) scaleX(1);
+    opacity: 10;
+  }
+}
+
+#text-drop-ar {
+  position: relative;
+}
+
+.para-info {
+  animation: drop-ar 0.75s linear forwards;
+}
+
+@keyframes drop-ar {
+  0% {
+    transform: translateX(200px) scaleX(0.9);
+    opacity: 0;
+  }
+
+  5% {
+    opacity: .7;
+  }
+
+  50% {
+    transform: translateX(0px) scaleX(1);
+    opacity: 10;
+  }
+
+  100% {
+    transform: translateX(0px) scaleX(1);
+    opacity: 10;
+  }
+}
